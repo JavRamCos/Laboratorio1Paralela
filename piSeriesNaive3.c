@@ -2,10 +2,11 @@
 #include <stdlib.h>
 #include <math.h>
 #include <time.h>
+#include <omp.h>
 
 int main(int argc, char* argv[]) {
     int N = 10e8;
-    int thread_count = 6;
+    int thread_count = 100;
     int block_size = 128;
     clock_t t;
     t = clock();
